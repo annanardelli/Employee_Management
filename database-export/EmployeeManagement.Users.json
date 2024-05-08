@@ -1,0 +1,18 @@
+[{
+  "_id": {
+    "$oid": "6627f60666ace29bee0ad7bc"
+  },
+  "cognito_user_id": "b11be02d-95e7-4282-9ac7-82782d560d5e",
+  "email": "s1164308@monmouth.edu",
+  "given_name": "Test",
+  "family_name": "User"
+},
+{
+  "_id": {
+    "$oid": "662e91185d9bc309356a0e0a"
+  },
+  "cognito_user_id": "e4f814e8-c081-7014-e950-b23450774261",
+  "email": "aanardelli1@gmail.com",
+  "given_name": "Anna",
+  "family_name": "Nardelli"
+}]

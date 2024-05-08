@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="images/person.png" type="">
+    <title>Employee Management System</title>
+    <style>
+        th, td {
+            border: 1px solid #ffffff;
+        }
+        td{
+            color: white;
+        }
+
+    </style>
+    <!-- Load the Amplify library -->
+    <script src="https://unpkg.com/aws-amplify@3.3.3/dist/aws-amplify.min.js"></script>
+
+</head>
+<body>
+    <!-- add,edit,delete and view employees -->
+    <div class="flex justify-center flex-col my-10">
+        <div class="flex justify-center">
+            <div class="w-11/12 lg:w-1/2">
+                <div class="bg-slate-800 text-white text-center p-4 rounded-t-lg">
+                    <h1 class="text-3xl font-bold text-center my-4">Employee Management System</h1>
+                    <div class="flex justify-center">
+                        <div class="w-1/2">
+                                <div class="mb-4 text-left">
+                                    <label class="block text-white text-sm font-bold mb-2" for="name">
+                                        Name
+                                    </label>
+                                    <input class="bg-white appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-slate-700 focus:text-white focus:border-purple-500" id="name" type="text" placeholder="Enter Name">
+                                </div>
+                                <div class="mb-4 text-left">
+                                    <label class="block text-white text-sm font-bold mb-2" for="email">
+                                        Email
+                                    </label>
+                                    <input class="bg-white appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-slate-700 focus:text-white focus:border-purple-500" id="email" type="email" placeholder="Enter Email" name="email">
+                                </div>
+                                <div class="mb-4 text-left">
+                                    <label class="block text-white text-sm font-bold mb-2" for="title">
+                                        Job Title
+                                    </label>
+                                    <input class="bg-white appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-slate-700 focus:text-white focus:border-purple-500" id="title" type="text" placeholder="Enter Job Title" name="title">
+                                </div>
+                                <div class="mb-4 text-left">
+                                    <label class="block text-white text-sm font-bold mb-2" for="wage">
+                                        Salary
+                                    </label>
+                                    <input class="bg-white appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-slate-700 focus:text-white focus:border-purple-500" id="wage" type="text" placeholder="Enter Salary" name="wage">
+                                </div>
+                                <div class="mb-4 text-left">
+                                    <label class="block text-white text-sm font-bold mb-2" for="supervisor">
+                                        Supervisor
+                                    </label>
+                                    <input class="bg-white appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-slate-700 focus:text-white focus:border-purple-500" id="supervisor" type="text" placeholder="Enter Supervisor Name" name="supervisor">
+                                </div>
+                                <div class="flex justify-between gap-2 xl:gap-0 md:gap-0">
+                                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" onclick="addEmployee()" type="button">
+                                        Add Employee
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center">
+            <div class="w-11/12 lg:w-1/2 flex flex-col justify-cente bg-slate-700 p-4 rounded-b-lg">
+                <div class="flex gap-2 justify-center items-center">
+                    <h1 class="text-2xl text-white font-semibold">Employees</h1>
+                    <img src="/images/person.png" alt="user" class="w-7 h-7">
+                </div>
+                <div class="flex justify-center mt-4">
+                    <table class="table-fixed">
+                        <thead class="bg-gray-800 text-white">
+                            <tr class="text-center">
+                                <th class="px-2 py-2">Name</th>
+                                <th class="px-2 py-2">Email</th>
+                                <th class="px-2 py-2">Title</th>
+                                <th class="px-2 py-2">Wage</th>
+                                <th class="px-2 py-2">Supervisor</th>
+                            </tr>
+                        </thead>
+                        <tbody id="employees"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function emptyFields() {
+        document.getElementById('name').value = '';
+        document.getElementById('email').value = '';
+        document.getElementById('title').value = '';
+        document.getElementById('wage').value = '';
+        document.getElementById('supervisor').value = '';
+    }
+</script>
+
+    <div id="data-container"></div>
+    <script src="/js/config.js"></script>
+    <script src="/js/main.js"></script>
+</html>

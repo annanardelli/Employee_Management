@@ -1,0 +1,88 @@
+[{
+  "_id": {
+    "$oid": "66047c8529d41aa5fa7944d5"
+  },
+  "name": "Anna Nardelli",
+  "email": "aanardelli1#gmail.com",
+  "title": "Software Engineer",
+  "wage": 85000,
+  "supervisor": "John Smith",
+  "user_email": "s1164308@monmouth.edu"
+},
+{
+  "_id": {
+    "$oid": "662e6c0ba0f5581ab0533e49"
+  },
+  "name": "Anna Nardelli",
+  "email": "email@rmail.com",
+  "title": "title",
+  "wage": "2345",
+  "supervisor": "supervisor",
+  "user_email": "s1164308@monmouth.edu"
+},
+{
+  "_id": {
+    "$oid": "662e6fbd146471c3f1f9a223"
+  },
+  "name": "tester",
+  "email": "testemail@email.com",
+  "title": "test title",
+  "wage": "3452345",
+  "supervisor": "supervisor",
+  "user_email": "s1164308@monmouth.edu"
+},
+{
+  "_id": {
+    "$oid": "662e715683dac9236b7157ae"
+  },
+  "name": "Test Name",
+  "email": "test@test.com",
+  "title": "Test Title",
+  "wage": "23456",
+  "supervisor": "Test Supervisor",
+  "user_email": "s1164308@monmouth.edu"
+},
+{
+  "_id": {
+    "$oid": "662e8b11b9f0e80e3ed772b9"
+  },
+  "name": "Anna Nardelli",
+  "email": "aanardelli1@gmail.com",
+  "title": "qwer",
+  "wage": "35",
+  "supervisor": "asdf",
+  "user_email": "s1164308@monmouth.edu"
+},
+{
+  "_id": {
+    "$oid": "662e8cae658db715b2e824b8"
+  },
+  "name": "Julia Benol",
+  "email": "jb@gmail.com",
+  "title": "teacher",
+  "wage": "234578",
+  "supervisor": "Anna Nardelli",
+  "user_email": "s1164308@monmouth.edu"
+},
+{
+  "_id": {
+    "$oid": "662e9184dc4e6d4fe40cfd32"
+  },
+  "name": "Janelle Ramirez",
+  "email": "jjramirez@gmail.com",
+  "title": "job",
+  "wage": "2345",
+  "supervisor": "asdf",
+  "user_email": "aanardelli1@gmail.com"
+},
+{
+  "_id": {
+    "$oid": "662e977830601a19d6d3d404"
+  },
+  "name": "Anna Nardelli",
+  "email": "aanardelli1@gmail.com",
+  "title": "Software Engineer",
+  "wage": "90000",
+  "supervisor": "Janelle Ramirez",
+  "user_email": "aanardelli1@gmail.com"
+}]
