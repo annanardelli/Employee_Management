@@ -1,6 +1,6 @@
 # Employee Management Application
 
-### Deployed in AWS with an HTML and JavaScript front-end. The back-end is serverless using Lambda functions, which are triggered from the front-end through REST APIs.
+### Deployed in AWS with an HTML and JavaScript front-end. The back-end is serverless using Python Lambda functions, which are triggered from the front-end through REST APIs.
 
 ### Accounts are managed through Cognito and the front-end code is hosted in AWS Amplify.
 
